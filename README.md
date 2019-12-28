@@ -24,9 +24,9 @@ CAB
         *a=*b;
         *b=t;
     }
-    void permute(char *str,int start,int end){
+    void permute(char *a,int start,int end){
         if(start==end){
-            printf("%s\n",str);
+            printf("%s\n",a);
         }
         else{
            for(int i=start;i<=eend;i++){
@@ -44,6 +44,6 @@ CAB
          printf("Permutations of a given string :\n");
          int len=strlen(str);
          int start=0;
-         int end=len-1
+         int end=len-1;
          permute(str,start,end);
     }
